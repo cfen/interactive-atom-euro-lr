@@ -1,0 +1,44 @@
+@import "mq";
+@import "palette";
+@import "fonts";
+@import "general";
+
+
+@import 'modules/_grid-system';
+@import 'modules/_side-margins';
+@import 'modules/_custom-grid';
+
+// @import 'modules/_all-series';
+// @import 'modules/_custom-grid';
+// @import 'modules/_small-multiple';
+
+// Uncomment for embeds
+//@import "embed";
+
+// Uncomment for full screen (including immersive article main media)
+//@import "fullscreen";
+
+.element-atom,
+.interactive-atom {
+    margin: 0 !important;
+
+
+    .gv-wrapper {
+    margin: 0 auto;
+    
+    // Breakpoints
+    @include mq(tablet) {
+        max-width: gs-span(9) + $gs-gutter*2;
+    }
+
+    @include mq(desktop) {
+        max-width: gs-span(12) + $gs-gutter*2;
+    }
+
+    @include mq(wide) {
+        width: gs-span(16) + $gs-gutter*2;
+        max-width: none;
+    }
+    
+}
+}
