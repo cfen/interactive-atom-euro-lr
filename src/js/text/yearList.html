@@ -1,0 +1,38 @@
+{{#years}}
+
+        <div class="dig-slice">
+
+            <div  class="dig-slice__inner">
+
+                <div class="dig-slice__inner__left">
+                    <h1>{{key}}</h1> 
+                </div>  
+
+                <div class="dig-slice__inner__main ">
+                    {{#values}}
+                    <p>{{Country}} -- {{Party}}</p>
+                    {{/values}}
+                </div>    
+
+
+            </div>
+
+    </div>
+
+        <div class="dig-slice">
+
+                <div  class="dig-slice__inner">
+
+                        <div class="dig-slice__inner__left"> </div>  
+
+                        <div id="map_{{key}}" class="chart all-series dig-slice__inner__main mapholder"> 
+
+
+                        </div>    
+
+                </div>
+
+        </div>
+
+
+{{/years}}
